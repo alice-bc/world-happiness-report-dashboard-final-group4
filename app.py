@@ -104,8 +104,17 @@ group_range = [COLOR_PALETTE.get(group, "#999999") for group in group_domain]
 st.title("World Happiness Dashboard")
 
 st.markdown(
-    "Explore how happiness scores changed across countries and how happiness relates "
-    "to social and economic indicators in the World Happiness Report dataset."
+    """
+    <style>
+    [data-testid="stSidebar"] {
+        background-image: url("https://em-content.zobj.net/source/apple/354/smiling-face_263a-fe0f.png");
+        background-repeat: no-repeat;
+        background-position: bottom 20px center;
+        background-size: 80px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
 )
 
 # -----------------------------
